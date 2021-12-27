@@ -41,7 +41,7 @@ def compile(*files, exe_name=None, cc=CC, max_log_lines=50, **cflags):
     """
 
     if not files:
-        raise RuntimeError(_("compile requires at least one file"))
+        raise RuntimeError(("compile requires at least one file"))
 
     if exe_name is None and files[0].endswith(".c"):
         exe_name = Path(files[0]).stem
