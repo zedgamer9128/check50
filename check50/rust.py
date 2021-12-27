@@ -13,7 +13,7 @@ if not cargo.startswith("cargo"):
     log("Cargo is not installed.")
     raise Failure("Cargo is not installed.")
 
-def compile(file):
+def compile(file=None):
     """
     Check if the Rust code compiles.
     """
